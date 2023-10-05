@@ -1,0 +1,60 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.control-group{
+    padding-bottom: 0.7rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.cat-select{
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+    align-items: center;
+}
+
+.loader-div{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    padding: 5rem 0;
+    background: rgba(0,0,0, 0.3);
+    display: none;
+    z-index: 999999999999999999;
+}
+.loader{
+    width: 10%;
+    margin: auto;
+}
+.loader img{
+    width: 100%;
+}
+
+.card-img-top{
+    object-fit: contain;
+    height: 250px;
+}
+
+#products-list .col-md-3{
+    display: flex;
+}
+
+#products-list .card-body{
+    border-top: 1px solid rgba(0, 0, 0, 0.175);;
+    margin-top: 0.5rem;
+}
+
+#products-list .card-title{
+    font-size: 1.125rem;
+}
+#products-list .card-subtitle{
+    font-size: 1rem;
+}
+#products-list .card-text{
+    font-size: 0.85rem;
+}

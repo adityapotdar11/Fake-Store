@@ -1,0 +1,15 @@
+.index-background{
+    height: 90.5vh;
+    background-image: url("../images/index-bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center-btns{
+    display: flex;
+    vertical-align: middle;
+    padding-top: 10rem;
+    gap: 1rem;
+    justify-content: center;
+}
