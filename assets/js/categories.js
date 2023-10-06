@@ -8,7 +8,9 @@ function getCategories() {
             if (response.length) {
                 html = ``;
                 for (let category of response) {
-                    html += `<div class="col-md-6 my-3"><div class="card pointer" onclick="viewProducts('${btoa(category)}')"><div class="card-body"><div class="card-title text-center mb-0 text-capitalize">${category}</div></div></div></div>`;
+                    html += `<div class="col-md-6 my-3"><div class="card pointer" onclick="viewProducts('${btoa(
+                        category
+                    )}')"><div class="card-body"><div class="card-title text-center mb-0 text-capitalize">${category}</div></div></div></div>`;
                 }
             }
             document.getElementById("categories-section").innerHTML = html;
@@ -18,10 +20,10 @@ function getCategories() {
     xhr.send();
 }
 
-function viewProducts(category){
+function viewProducts(category) {
     location.href = `products.html?category=${category}`;
 }
 
-window.onload = function() {
+window.onload = function () {
     getCategories();
 };

@@ -46,7 +46,9 @@ function getProducts() {
                             )}${
                             product.description.length > 97 ? "..." : ""
                         }</p>
-                            <a href="./product.html?data=${btoa(product.id)}" class="card-link">View Product</a>
+                            <a href="./product.html?data=${btoa(
+                                product.id
+                            )}" class="card-link">View Product</a>
                         </div>
                     </div></div>`;
                     }
@@ -98,7 +100,9 @@ function getProducts() {
                             )}${
                             product.description.length > 97 ? "..." : ""
                         }</p>
-                            <a href="./product.html?data=${btoa(product.id)}" class="card-link">View Product</a>
+                            <a href="./product.html?data=${btoa(
+                                product.id
+                            )}" class="card-link">View Product</a>
                         </div>
                     </div></div>`;
                     }

@@ -84,14 +84,14 @@ function addToCart() {
     }
     let payload = {
         userId: 1,
-        date: year+"-"+month+"-"+day,
+        date: year + "-" + month + "-" + day,
         products: [
             {
                 productId: prodId,
                 quantity: count,
             },
         ],
-    };    
+    };
     let xhr = new XMLHttpRequest();
     xhr.withCredentials = false;
     xhr.addEventListener("readystatechange", function () {
