@@ -18,7 +18,9 @@ function getSingleProduct() {
                     "product-img-sec"
                 ).innerHTML = `<img class="product-img" src="${response.image}" />`;
                 document.getElementById("product-title").innerHTML =
-                    response.title;
+                response.title;
+                document.getElementById("page-title").innerHTML =
+                    response.title + "- Fake Store";
                 document.getElementById("product-desc").innerHTML =
                     response.description;
                 document.getElementById("product-price").innerHTML =
@@ -46,8 +48,8 @@ function keepValue() {
     if (count) {
         if (parseInt(count) < 1) {
             document.getElementById("count").value = 1;
-        } else if (parseInt(count) > 9) {
-            document.getElementById("count").value = 9;
+        } else if (parseInt(count) > 10) {
+            document.getElementById("count").value = 10;
         } else {
             document.getElementById("count").value = parseInt(count);
         }
@@ -58,7 +60,7 @@ function keepValue() {
 
 function addCount() {
     let count = document.getElementById("count").value;
-    if (parseInt(count) < 9) {
+    if (parseInt(count) < 10) {
         document.getElementById("count").value = parseInt(count) + 1;
     }
 }

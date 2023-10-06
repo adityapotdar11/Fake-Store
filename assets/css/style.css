@@ -73,3 +73,62 @@ body {
     font-size: 2rem;
     padding-top: 0.75rem;
 }
+
+.alert-section {
+    min-height: 15vh;
+}
+
+.cart-icon-sec .feather {
+    width: 1.125rem;
+    height: 1.125rem;
+    stroke-width: 1.75px;
+    stroke: gray;
+}
+
+.cart-img-section img {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.calculation {
+    padding: 1rem;
+    border: 5px solid rgb(211, 211, 211);
+}
+.calculation .total{
+    font-size: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 3px solid rgb(211, 211, 211);
+    line-height: 1.2;
+    font-weight: 600;
+}
+.subtotal-section {
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.subtotal-section:last-child {
+    padding-bottom: 0;
+}
+
+.subtotal-section .title {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.subtotal-section .free-shipping {
+    text-decoration: underline;
+    font-weight: 400 !important;
+}
+
+.subtotal-section .amount,
+.subtotal-section .free-shipping {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.checkout-btn{
+    padding: 0.875rem 1rem;
+}
